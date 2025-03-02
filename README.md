@@ -1,0 +1,1 @@
+The project aims to develop a simple TODO application using Python(Flask) and SQLite, containerized with Docker for easier deployment and scalability.
