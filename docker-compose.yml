@@ -4,6 +4,6 @@ services:
     image: mytodoapp
     container_name: todo
     volumes: 
-      - /Users/phurwasherpa/Desktop/mytodoapp:/app
+      - ./:/app
     ports:
       - "5001:5000"
