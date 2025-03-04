@@ -1,11 +1,11 @@
 # Use an official Python runtime as a parent image
 FROM python:3.9-alpine
 
-# Set the working directory in the container
+# Set the working directory in the docker container
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-COPY . .
+COPY requirements.txt requirements.txt
 
 # Install Python dependencies (you can expand this to a requirements.txt if needed)
 RUN pip install -r requirements.txt && echo "Dependencies installed successfully."

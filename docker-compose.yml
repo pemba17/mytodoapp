@@ -1,0 +1,9 @@
+version: '3'
+services:
+  mytodoapp:
+    image: mytodoapp
+    container_name: todo
+    volumes: 
+      - /Users/phurwasherpa/Desktop/mytodoapp:/app
+    ports:
+      - "5001:5000"
