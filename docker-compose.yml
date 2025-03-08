@@ -1,8 +1,10 @@
 version: '3'
 services:
-  mytodoapp:
-    image: mytodoapp
-    container_name: todo
+  flask-service:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: flask-container
     volumes: 
       - ./:/app
     ports:
